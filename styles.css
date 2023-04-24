@@ -99,10 +99,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
+/*
 a {
   text-decoration: none;
-}
+} */
 
 button {
   margin: 0;
@@ -201,7 +201,7 @@ nav {
   padding: 1.5rem 1rem;
 }
 
-nav>img {
+nav > img {
   flex: 0 0 auto;
 }
 
@@ -209,6 +209,7 @@ nav a {
   --flex-gap: 0.5rem;
   color: hsl(var(--clr-neutral-400));
   align-items: center;
+  text-decoration: none;
   transition: border-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
@@ -292,7 +293,7 @@ nav a:hover {
   top: 35px;
 }
 
-.dropdown li+li {
+.dropdown li + li {
   margin-top: 1rem;
 }
 
@@ -319,7 +320,7 @@ nav a:hover {
     z-index: 2;
   }
 
-  .nav-menu>li {
+  .nav-menu > li {
     padding: 0;
   }
 
@@ -373,11 +374,11 @@ nav a:hover {
   padding: 2.5rem 1rem;
 }
 
-.intro>h1 {
+.intro > h1 {
   letter-spacing: -0.5px;
 }
 
-.intro>p {
+.intro > p {
   max-width: 45ch;
   margin: 1rem auto 1.5rem;
 }
@@ -389,6 +390,7 @@ a[data-state="primary"] {
   background-color: hsl(var(--clr-neutral-900));
   padding: 0.65em 1.3em;
   color: hsl(var(--clr-neutral-100));
+  text-decoration: none;
   transition: border 200ms ease-in-out, color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 
@@ -398,7 +400,7 @@ a[data-state="primary"]:hover {
   background-color: hsl(var(--clr-neutral-100));
 }
 
-.intro>.clients {
+.intro > .clients {
   --flex-gap: 1.5rem;
   margin-top: 3rem;
   align-items: center;
@@ -417,7 +419,7 @@ a[data-state="primary"]:hover {
     padding-inline: 2rem;
   }
 
-  main>picture {
+  main > picture {
     order: 1;
     max-width: 480px;
   }
@@ -427,7 +429,7 @@ a[data-state="primary"]:hover {
     padding: 1.5rem 2rem 0;
   }
 
-  .intro>h1 {
+  .intro > h1 {
     line-height: 1;
   }
 
@@ -435,7 +437,7 @@ a[data-state="primary"]:hover {
     padding: 0.65em 1.6em;
   }
 
-  .intro>.clients {
+  .intro > .clients {
     justify-content: start;
   }
 }
@@ -445,11 +447,11 @@ a[data-state="primary"]:hover {
     padding: 7rem 2rem 0;
   }
 
-  .intro>p {
+  .intro > p {
     margin: 3rem auto 3rem 0;
   }
 
-  .intro>.clients {
+  .intro > .clients {
     --flex-gap: 2.5rem;
     justify-content: start;
     margin-top: 6.5rem;
